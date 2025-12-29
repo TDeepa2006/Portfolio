@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepa T | Portfolio</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ffffff; 
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    /* HERO - FULL WIDTH BACKGROUND */
+    .hero-outer-wrapper {
+      width: 100%;
+      background: linear-gradient(to right, #00adb5, #393e46);
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+      /* Remove the white background from the hero section specifically */
+      background: transparent !important; 
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #111;
+      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00adb5;
+      color: #fff;
+    }
+
+    /* ALL OTHER SECTIONS */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffff; 
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #00adb5;
+    }
+
+    /* ABOUT / EDUCATION */
+    .about {
+      text-align: center;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .skill {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 5px;
+      border-left: 5px solid #00adb5;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h3>Deepa T</h3>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero-outer-wrapper">
+    <section class="hero">
+      <div>
+        <h1>Hello, I'm Deepa T</h1>
+        <p>Aspiring Software Engineer | Student</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+  </div>
+
+  <section id="about" class="about">
+    <h2>Career Objective</h2>
+    <p>
+      Aspiring Software Engineer seeking opportunities in top-tier tech companies such as Amazon, ServiceNow, Mr. Cooper, Soliton, and Zoho. Passionate about designing and developing scalable, efficient software solutions that address real-world challenges.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML (4/10)</div>
+      <div class="skill">CSS (4/10)</div>
+      <div class="skill">Java (3/10)</div>
+      <div class="skill">Python (5/10)</div>
+      <div class="skill">C (5/10)</div>
+      <div class="skill">UI/UX Design</div>
+      <div class="skill">DSA Basics</div>
+    </div>
+  </section>
+
+  <section id="education" class="about">
+    <h2>Education</h2>
+    <p><strong>B.Tech – Artificial Intelligence and Data Science</strong></p>
+    <p>Bannari Amman Institute of Technology</p>
+    <p>Expected Graduation: 2028</p>
+    <p>CGPA: 7.55</p>
+  </section>
+
+  <section id="certifications" class="about">
+    <h2>Certifications & Plans</h2>
+    <p>NPTEL – Cloud Computing</p>
+    <p>NPTEL – Responsible Safe AI Systems</p>
+    <p>Planned: AWS / Oracle Certification</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Front-End Web Pages</h3>
+        <p>Built responsive pages using HTML & CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: deepat.ad24bitsathy.ac.in</p>
+    <p style="margin-top: 1rem;">
+      <a href="https://linkedin.com/in/deepa-thangavelkumar" target="_blank" style="color:#00adb5; text-decoration: none; font-weight: bold;">LinkedIn</a> |  
+      <a href="https://leetcode.com/u/u8qRt7gqTG" target="_blank" style="color:#00adb5; text-decoration: none; font-weight: bold;">LeetCode</a> |  
+      <a href="https://github.com" target="_blank" style="color:#00adb5; text-decoration: none; font-weight: bold;">GitHub</a>
+    </p>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: #777;">Target Roles: Software Engineer</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Deepa T. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
